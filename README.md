@@ -22,7 +22,7 @@ This repository contains the complete portfolio of projects needed to demonstrat
 
 <img width="891" height="910" alt="Screenshot 2025-10-31 124759" src="https://github.com/user-attachments/assets/39fe16fa-6b17-4228-8120-097778bda62a" />
 
-Live Demo: https://acheronx0577.github.io/JavaScript-Telephone-Number-Validator
+Live Demo: https://acheronx0577.github.io/JavaScript-Build-a-Telephone-Number-Validator
 
 ---
 
