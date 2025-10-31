@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TELEPHONE_VALIDATOR</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="terminal">
+        <header class="terminal-header">
+            <div class="window-controls">
+                <span class="control close"></span>
+                <span class="control minimize"></span>
+                <span class="control maximize"></span>
+            </div>
+            <div class="title-bar">
+                <span class="prompt">></span>
+                <span class="title">TELEPHONE_VALIDATOR</span>
+                <span class="cursor">_</span>
+            </div>
+        </header>
+
+        <main class="terminal-body">
+            <div class="app-header">
+                <h1 class="app-title">~/validation/phone_numbers</h1>
+                <div class="status-bar">
+                    <span class="status-item">ACTIVE</span>
+                    <span class="status-item">v2.1.0</span>
+                    <span class="status-item">US_FORMAT</span>
+                </div>
+            </div>
+
+            <div class="input-section">
+                <div class="input-header">
+                    <span class="input-title">PHONE_INPUT</span>
+                    <span class="input-desc">Enter US phone number format</span>
+                </div>
+                <div class="input-container">
+                    <span class="input-prompt">></span>
+                    <input 
+                        type="text" 
+                        id="user-input" 
+                        class="terminal-input" 
+                        placeholder="e.g., 555-555-5555 or (555) 555-5555"
+                    />
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button id="check-btn" class="terminal-btn primary">
+                    <span class="btn-text">[VALIDATE]</span>
+                </button>
+                <button id="clear-btn" class="terminal-btn secondary">
+                    <span class="btn-text">[CLEAR]</span>
+                </button>
+            </div>
+
+            <div class="results-section">
+                <div class="results-header">
+                    <span class="results-title">VALIDATION_RESULTS</span>
+                    <span class="results-status" id="results-status">READY</span>
+                </div>
+                <div id="results-div" class="results-content">
+                    <div class="placeholder">Results will appear here...</div>
+                </div>
+            </div>
+
+            <div class="info-panel">
+                <div class="info-header">
+                    <span class="info-title">VALID_FORMATS</span>
+                </div>
+                <div class="info-content">
+                    <div class="format-list">
+                        <div class="format-item">
+                            <span class="format-example">555-555-5555</span>
+                            <span class="format-desc">Standard format</span>
+                        </div>
+                        <div class="format-item">
+                            <span class="format-example">(555) 555-5555</span>
+                            <span class="format-desc">Parentheses format</span>
+                        </div>
+                        <div class="format-item">
+                            <span class="format-example">1 555-555-5555</span>
+                            <span class="format-desc">With country code</span>
+                        </div>
+                        <div class="format-item">
+                            <span class="format-example">5555555555</span>
+                            <span class="format-desc">Plain digits</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="terminal-footer">
+            <div class="footer-stats">
+                <span class="stat">STATUS: <span id="status">AWAITING_INPUT</span></span>
+                <span class="stat">VALIDATED: <span id="validated-count">0</span></span>
+                <span class="stat">MODE: <span id="mode">US_NUMBERS</span></span>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
