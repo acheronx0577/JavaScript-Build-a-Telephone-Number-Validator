@@ -83,7 +83,7 @@ Live Demo: https://acheronx0577.github.io/JavaScript-Telephone-Number-Validator
 
 ### 1️⃣ Clone this repo
 ```
-git clone git@github.com:acheronx0577/JavaScript-Building-a-Spreadsheet.git
+git clone git@github.com:acheronx0577/JavaScript-Build-a-Telephone-Number-Validator.git
 ```
 
 ### 2️⃣ Run the file
